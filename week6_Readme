@@ -1,0 +1,36 @@
+What is a scope ?
+The life cyele of a bean ,
+length of life ,
+number of instances,
+how is it shared ?
+
+default : singleton.
+- one instance
+- cached in memory
+- share reference.
+
+Scope is an attribute that can be configured.
+- prototype : new bean per container
+- request : web
+- session : http
+- global session : application wide.
+3
+############ video 2
+-- need to review how to set up the project structure.
+
+singleton , prototype.
+
+Default use of singleton means that each instance of bean is referencing the same thing
+Prototype , should show us that different beans have different memory locations
+
+############# video 3 / 4
+looking at the life cycle
+- bean is instantiated
+- dependencies Injected
+- internal spring processing
+- Your custom init code (id wanted)
+-- finally it is called , can be destroyed
++use the init-method
++ use the destroy method
+
+we can have multiple config files
